@@ -18,7 +18,3 @@ for i in range(0, 256):
     im.save("brain_slices/brain{i}.png".format(i=i))
 
 
-import umap
-reducer = umap.UMAP()
-embedding = reducer.fit_transform(iris.data)
-embedding.shape
